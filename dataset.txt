@@ -1,0 +1,4 @@
+Hadoop is an open source framework.
+Hadoop supports processing and storage of extremely large data.
+Hadoop is a java based programming framework.
+Hadoop consists of cluster computers built from commodity hardware.

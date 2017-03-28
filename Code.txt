@@ -1,0 +1,6 @@
+temp = load '/user/acadgild/dataset';
+t1 = foreach temp generate flatten(TOKENIZE((chararray)$0)) as t;
+t2 = filter t1 by t matches '\\t++';
+t3 = group t2 by t;
+t4 = foreach t3 generate COUNT(t2) , group;
+dump t4;
